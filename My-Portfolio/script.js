@@ -1,5 +1,3 @@
-//  const navbarHeight = document.querySelector('.main-container').offsetHeight;//gives the height including padding and its border and excluding margin
-//  document.querySelector('.page1').style.paddingTop = navbarHeight + 'px';
 let text = new Typed('#name',{
     strings:["SACHIN","DEVELOPER","STUDENT","CODER"],
     loop:true,
