@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Navbar styling */
+.navbar {
+    background-color: blue; /* Dark background color */
+    overflow: hidden; /* Clear floats */
+    padding: 20px; /* Padding inside the navbar */
+}
+
+/* Brand/logo styling */
+.navbar-brand {
+    float: left; /* Float brand/logo to the left */
+    color: white; /* White text color */
+    font-size: 18px; /* Larger font size for brand/logo */
+    text-decoration: none; /* Remove underline from link */
+    font-weight: bold;
+}
+
+/* Span inside brand */
+#x {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Links container */
+.navbar-links {
+    float: right; /* Float links to the right */
+    list-style-type: none; /* Remove bullet points from list */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Individual links */
+.navbar-links li {
+    display: inline-block; /* Display links as blocks */
+    margin-left: 20px; /* Space between links */
+}
+
+/* Link styling */
+.navbar-links li a {
+    position: relative; /* Ensure pseudo-element positions relative to link */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Font size for links */
+    padding: 10px 0; /* Padding inside the links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+    margin-right: 20px;
+}
+/* Underline on hover */
+.navbar-links li a::after {
+    content: ''; /* Empty content */
+    position: absolute; /* Position absolutely relative to the link */
+    left: 0; /* Align at left */
+    bottom: 0; /* Align at bottom */
+    width: 0; /* Initially no width */
+    height: 2px; /* Height of the underline */
+    background-color: white; /* Color of the underline */
+    transition: width 0.3s ease-in-out; /* Smooth transition for underline width */
+}
+.navbar-links li:not(:last-child):hover a::after {
+    width: 100%; /* Full width of the link on hover, except for the last child */
+}
+/* Remove underline on last child */
+.container {
+    background-image: url('https://wallpaperswide.com/download/abstract_headphones-wallpaper-3840x2160.jpg');/*This image is taken from google */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    min-height: calc(100vh - 67px);
+}
+#signup:hover {
+    color:red; 
+}
+.container .content {
+    display: flex;
+    flex-direction: column;
+}
+#first {
+    margin-left: 80px;
+    margin-top: 120px;
+}
+#first h4 {
+    display: inline; /* Make h4 inline to fit background to content */
+    margin: 30px; /* Remove default margin of h4 */
+    padding: 20px; /* Padding inside the h4 */
+    background-color: transparent; /* Background color of the h4 */
+    color: white; /* Text color */
+    border-radius: 30px;
+    border: 2px solid blue;
+}
+#second{
+    margin-left: 110px;
+    margin-top: 20px;
+    width: 500px;
+    height: 200px;
+    background-color: transparent;
+}
+#second h1{
+    color: white;
+    font-size: 50px;
+} #third{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+#third h5{
+    color:white;
+    font-size: 20px;
+}
+#fourth {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.arrow-button {
+    display: flex;
+    color:white;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all .3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    font-size: 30px;
+    border: 2px solid blue;
+}
+
+.arrow-button > .arrow {
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid #c4c2ff;
+    border-bottom: 2px solid #c4c2ff;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 0 6px;
+    transition: all .3s ease;
+}
+
+.arrow-button > .arrow::before {
+    display: block;
+    background-color: currentColor;
+    width: 3px;
+    transform-origin: bottom right;
+    height: 2px;
+    position: absolute;
+    opacity: 0;
+    bottom: calc(-2px / 2);
+    transform: rotate(45deg);
+    transition: all .3s ease;
+    content: "";
+    right: 0;
+}
+
+.arrow-button:hover > .arrow {
+    transform: rotate(-45deg) translate(4px, 4px);
+    border-color: text-hover-color;
+}
+
+.arrow-button:hover > .arrow::before {
+    opacity: 1;
+    width: 10px;
+}
+
+.arrow-button:hover {
+    background-color: black;
+    color: #fff;
+}
