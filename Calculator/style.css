@@ -1,0 +1,62 @@
+body{
+    background-color: orange;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+}
+.container{
+    height: 600px;
+    width: 400px;
+    background-color: black;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 0%;
+}
+.container .Button-container .buttons{
+    display: flex;
+    flex-direction: row;
+
+}
+.container .buttons button {
+    width: 100%;
+    font-size: 18px;
+    background-color: white;
+    padding: 20px;
+    color: black;
+    border: 1px solid orange;
+    cursor: pointer;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.container .buttons button:hover {
+    background-color: whitesmoke;
+}
+.display{
+    width: 400px;
+    border-radius: 20px;
+    flex: 20%;
+    background-color: white;
+    text-align: right;
+    border: 2px solid black;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end; /* Align items to the bottom */
+    justify-content: flex-end; /* Justify content to the right */
+    padding: 10px;
+}
+.display h2{
+    margin: 0;
+}
+.Button-container {
+    background-color: black;
+    border-radius:10px;
+}
